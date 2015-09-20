@@ -1,0 +1,9 @@
+count = 0
+(0..100).each do |n|
+   while (n != 0)
+      num = n%10
+      n = n/10
+      count += 1 and break if (num == 7)
+   end
+end
+puts count
